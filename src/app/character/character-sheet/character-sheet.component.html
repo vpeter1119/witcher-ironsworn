@@ -1,0 +1,22 @@
+<div class="cs-container">
+    <div class="cs-header">
+        <h2>Character Sheet</h2>
+    </div>
+    <div class="cs-row">
+        <div class="cs-col">
+            <div class="cs-label">Character</div>
+            <mat-form-field appearance="fill">
+                <!-- <mat-label>Character Name</mat-label> -->
+                <div class="cs-field">
+                    <input matInput type="text" [value]="formData.name || ''">
+                </div>
+            </mat-form-field>
+        </div>
+        <div class="cs-col">
+            <div class="cs-label">Experience</div>
+            <div class="cs-field">
+                <app-experience-tracker [data]="formData.experience"></app-experience-tracker>
+            </div>
+        </div>
+    </div>
+</div>

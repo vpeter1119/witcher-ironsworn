@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { UtilityService } from './common/utility.service';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'witcher-ironsworn';
+  constructor(private _utils: UtilityService) {this._utils.setTitle()}
 }

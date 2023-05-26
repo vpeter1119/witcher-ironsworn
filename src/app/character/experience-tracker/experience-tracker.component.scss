@@ -1,0 +1,8 @@
+.et-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    .xp-pip {
+        flex: 0 1 6.5%;
+    }
+}

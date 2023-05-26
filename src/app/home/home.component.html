@@ -1,0 +1,7 @@
+<div class="home-container">
+    <div class="home-tiles">
+        <mat-card *ngFor="let tile of tiles" class="home-tile" [id]="tile.id" (click)="goTo(tile.path)">
+            <span>{{tile.display}}</span>
+        </mat-card>
+    </div>
+</div>
