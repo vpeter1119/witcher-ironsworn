@@ -54,6 +54,11 @@ export class CharacterSheetComponent {
     if(this.formData.experience) this.formData.experience.value = 10;
     if(this.formData.experience) this.formData.experience.used = 5;
     if(this.formData.experience) this.formData.experience.spend(3);
+    if(this.formData.stats) this.formData.stats.edge.value = 3;
+    if(this.formData.stats) this.formData.stats.heart.value = 2;
+    if(this.formData.stats) this.formData.stats.iron.value = 2;
+    if(this.formData.stats) this.formData.stats.shadow.value = 1;
+    if(this.formData.stats) this.formData.stats.wits.value = 1;
   }
 
 }

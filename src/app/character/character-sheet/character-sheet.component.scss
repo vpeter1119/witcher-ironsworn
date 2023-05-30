@@ -1,24 +1,10 @@
-.cs-row {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    gap: 0.5rem;
-}
-
-.cs-col {
-    flex: 0 1 50%;
-    display: flex;
-    flex-direction: column;
-    // align-items: flex-start;
-    gap: 0.5rem;
+.cs-section {
+    margin-bottom: 1rem;
 }
 
 .cs-label {
-    font-size: 12pt;
+    font-size: 14pt;
     text-transform: uppercase;
     font-weight: 500;
-}
-
-.cs-field {
-    // height: 84px;
+    font-family: 'TheWitcher';
 }

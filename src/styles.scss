@@ -37,3 +37,13 @@ $witcher-ironsworn-theme: mat.define-light-theme((
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+/* Witcher Font */
+
+@font-face {
+  font-family: "TheWitcher";
+  src: local("TheWitcher"), url(./assets/fonts/thewitcher.ttf) format("truetype");
+}
+h1, h2, h3 {
+  font-family: 'TheWitcher';
+}

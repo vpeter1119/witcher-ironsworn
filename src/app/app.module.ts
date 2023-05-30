@@ -23,6 +23,7 @@ import { CharacterGeneratorComponent } from './character/character-generator/cha
 import { CharacterSheetComponent } from './character/character-sheet/character-sheet.component';
 import { ExperienceTrackerComponent } from './character/experience-tracker/experience-tracker.component';
 import { ExperiencePipComponent } from './character/experience-tracker/experience-pip/experience-pip.component';
+import { StatComponent } from './character/stat/stat.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,8 @@ import { ExperiencePipComponent } from './character/experience-tracker/experienc
     CharacterGeneratorComponent,
     CharacterSheetComponent,
     ExperienceTrackerComponent,
-    ExperiencePipComponent
+    ExperiencePipComponent,
+    StatComponent
   ],
   imports: [
     BrowserModule,
