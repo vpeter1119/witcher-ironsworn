@@ -47,3 +47,11 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 h1, h2, h3 {
   font-family: 'TheWitcher';
 }
+
+/* Handwriting Font */
+
+
+@font-face {
+  font-family: "Caveat";
+  src: local("Caveat"), url(./assets/fonts/Caveat-VariableFont_wght.ttf) format("truetype");
+}

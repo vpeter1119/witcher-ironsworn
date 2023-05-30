@@ -15,8 +15,8 @@ export class ExperienceTrackerComponent implements AfterViewInit {
 
   ngAfterViewInit(): void {
     for (let i = 0; i < this.max; i++) {
-      if (this.data && i <= this.data.used) this.xpArray.push(2);
-      else if (this.data && i <= this.data.value) this.xpArray.push(1);
+      if (this.data && i < this.data.used) this.xpArray.push(2);
+      else if (this.data && i < this.data.value) this.xpArray.push(1);
       else this.xpArray.push(0);
     }
   }

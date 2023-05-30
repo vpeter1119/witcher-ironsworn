@@ -1,3 +1,10 @@
+.cs-container {
+    max-width: 1200px;
+    margin: auto;
+    border: 1px solid #ccc;
+    padding: 15px;
+}
+
 .cs-section {
     margin-bottom: 1rem;
 }
@@ -7,4 +14,14 @@
     text-transform: uppercase;
     font-weight: 500;
     font-family: 'TheWitcher';
+}
+
+.cs-name {
+    border: 1px solid #ccc;
+    padding: 15px;
+    font-family: 'Caveat';
+    font-size: 16pt;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
 }
