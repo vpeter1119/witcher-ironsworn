@@ -39,6 +39,7 @@
                         <mat-label>Bonds with</mat-label>
                         <input matInput type="text">
                     </mat-form-field>
+                    <!-- <div class="cs-name"></div> -->
                 </div>
             </div>
             <div class="cs-section-divider"><span class="cs-section-divider">Vows</span></div>
@@ -46,9 +47,10 @@
                 <div class="cs-vows-wrapper" *ngIf="formData.vows" fxLayout="column" fxLayoutAlign="start center">
                     <div class="cs-vow" *ngFor="let vow of formData.vows; let i = index" fxLayout="column" fxLayoutAlign="start center">
                         <div class="cs-vow-text">
-                            <mat-form-field appearance="outline" class="cs-vow-text-input">
+                            <!-- <mat-form-field appearance="outline" class="cs-vow-text-input">
                                 <input matInput type="text" [value]="vow.text">
-                            </mat-form-field>
+                            </mat-form-field> -->
+                            <div class="cs-vow-text-input cs-name">{{vow.text}}</div>
                         </div>
                         <app-progress-rank [rank]="formData.vows[i].progress.rank"></app-progress-rank>
                         <app-progress-tracker [data]="formData.vows[i].progress"></app-progress-tracker>
