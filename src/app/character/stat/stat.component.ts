@@ -8,7 +8,6 @@ import { Stat } from 'src/app/data/stat';
 })
 export class StatComponent {
 
-  @Input() title?: string;
   @Input() data?: Stat;
 
 }

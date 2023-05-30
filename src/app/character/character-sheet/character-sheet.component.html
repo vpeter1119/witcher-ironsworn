@@ -23,12 +23,17 @@
         <div fxLayout="column" fxFlex="100px">
             <p>motivation</p>
         </div>
-        <div fxFlex="auto" fxLayout="row" fxLayoutAlign="center start" fxLayoutGap="2rem">
-            <app-stat title="Edge" [data]="formData.stats?.edge"></app-stat>
-            <app-stat title="Heart" [data]="formData.stats?.heart"></app-stat>
-            <app-stat title="Iron" [data]="formData.stats?.iron"></app-stat>
-            <app-stat title="Shadow" [data]="formData.stats?.shadow"></app-stat>
-            <app-stat title="Wits" [data]="formData.stats?.wits"></app-stat>
+        <div fxFlex="auto" fxLayout="column">
+            <div fxLayout="row" fxLayoutAlign="center start" fxLayoutGap="0.25rem">
+                <app-stat [data]="formData.stats?.edge"></app-stat>
+                <app-stat [data]="formData.stats?.heart"></app-stat>
+                <app-stat [data]="formData.stats?.iron"></app-stat>
+                <app-stat [data]="formData.stats?.shadow"></app-stat>
+                <app-stat [data]="formData.stats?.wits"></app-stat>
+            </div>
+            <div class="cs-section-divider"><span class="cs-section-divider">Bonds</span></div>
+            <div class="cs-section-divider"><span class="cs-section-divider">Vows</span></div>
+            <div class="cs-section-divider"><span class="cs-section-divider">Debilities</span></div>
         </div>
         <div fxLayout="column" fxFlex="100px">
             <p>statuses</p>
