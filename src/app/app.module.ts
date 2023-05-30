@@ -11,6 +11,7 @@ import { MatCardModule } from '@angular/material/card';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatIconModule } from '@angular/material/icon';
 import { MatInputModule } from '@angular/material/input';
+import { MatRadioModule } from '@angular/material/radio';
 import { MatToolbarModule } from '@angular/material/toolbar';
 
 /* Components */
@@ -25,6 +26,7 @@ import { ExperienceTrackerComponent } from './character/experience-tracker/exper
 import { ExperiencePipComponent } from './character/experience-tracker/experience-pip/experience-pip.component';
 import { StatComponent } from './character/stat/stat.component';
 import { ProgressTrackerComponent } from './character/progress-tracker/progress-tracker.component';
+import { ProgressRankComponent } from './character/progress-rank/progress-rank.component';
 
 @NgModule({
   declarations: [
@@ -37,7 +39,8 @@ import { ProgressTrackerComponent } from './character/progress-tracker/progress-
     ExperienceTrackerComponent,
     ExperiencePipComponent,
     StatComponent,
-    ProgressTrackerComponent
+    ProgressTrackerComponent,
+    ProgressRankComponent
   ],
   imports: [
     BrowserModule,
@@ -48,7 +51,8 @@ import { ProgressTrackerComponent } from './character/progress-tracker/progress-
     MatCardModule,
     MatFormFieldModule,
     MatIconModule,
-    MatInputModule, 
+    MatInputModule,
+    MatRadioModule,
     MatToolbarModule
   ],
   providers: [],

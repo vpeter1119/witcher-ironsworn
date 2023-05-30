@@ -30,7 +30,9 @@ export class CharacterSheetComponent {
       wits: {id: 'wits', name: 'wits', value: 0},
     },
     bonds: {rank: PROGRESS_RANK.Epic, value: 0},
-    vows: [],
+    vows: [
+      { text: 'Save the village of Flotsam', progress: { rank: PROGRESS_RANK.Dangerous, value: 2 } }
+    ],
     debilities: {
       wounded: false,
       shaken: false,

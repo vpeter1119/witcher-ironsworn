@@ -1,0 +1,5 @@
+<div class="pr-container">
+    <mat-radio-group aria-label="Select an option" [value]="rank">
+        <mat-radio-button *ngFor="let rank of ranks" [value]="rank.value" selec>{{rank.display}}</mat-radio-button>
+    </mat-radio-group>
+</div>

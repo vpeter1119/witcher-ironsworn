@@ -32,10 +32,29 @@
                 <app-stat [data]="formData.stats?.wits"></app-stat>
             </div>
             <div class="cs-section-divider"><span class="cs-section-divider">Bonds</span></div>
-            <div class="cs-section cs-bonds">
+            <div class="cs-section cs-bonds" fxLayout="column" fxLayoutAlign="start center">
                 <app-progress-tracker [data]="formData.bonds"></app-progress-tracker>
+                <div class="cs-bonds-text">
+                    <mat-form-field appearance="outline" class="cs-bonds-text-input">
+                        <mat-label>Bonds with</mat-label>
+                        <input matInput type="text">
+                    </mat-form-field>
+                </div>
             </div>
             <div class="cs-section-divider"><span class="cs-section-divider">Vows</span></div>
+            <div class="cs-section cs-vows" fxLayout="column" fxLayoutAlign="start center">
+                <div class="cs-vows-wrapper" *ngIf="formData.vows" fxLayout="column" fxLayoutAlign="start center">
+                    <div class="cs-vow" *ngFor="let vow of formData.vows; let i = index" fxLayout="column" fxLayoutAlign="start center">
+                        <div class="cs-vow-text">
+                            <mat-form-field appearance="outline" class="cs-vow-text-input">
+                                <input matInput type="text" [value]="vow.text">
+                            </mat-form-field>
+                        </div>
+                        <app-progress-rank [rank]="formData.vows[i].progress.rank"></app-progress-rank>
+                        <app-progress-tracker [data]="formData.vows[i].progress"></app-progress-tracker>
+                    </div>
+                </div>
+            </div>
             <div class="cs-section-divider"><span class="cs-section-divider">Debilities</span></div>
         </div>
         <div fxLayout="column" fxFlex="100px">

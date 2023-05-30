@@ -40,3 +40,27 @@
     display: flex;
     align-items: center;
 }
+
+.cs-bonds-text {
+    margin-top: 1rem;
+    width: 50%;
+    .cs-bonds-text-input {
+        width: 100%;
+    }
+}
+
+
+.cs-vows-wrapper {
+    width: 100%;
+    .cs-vow {
+        width: 100%;
+        .cs-vow-text {
+            margin-top: 1rem;
+            width: 50%;
+            .cs-vow-text-input {
+                width: 100%;
+            }
+        }
+    }
+}
+
