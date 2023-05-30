@@ -59,6 +59,7 @@ export class CharacterSheetComponent {
     if(this.formData.stats) this.formData.stats.iron.value = 2;
     if(this.formData.stats) this.formData.stats.shadow.value = 1;
     if(this.formData.stats) this.formData.stats.wits.value = 1;
+    if(this.formData.bonds) this.formData.bonds.value = 17;
     console.warn('formData', this.formData);
   }
 

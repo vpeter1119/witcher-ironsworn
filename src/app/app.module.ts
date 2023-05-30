@@ -24,6 +24,7 @@ import { CharacterSheetComponent } from './character/character-sheet/character-s
 import { ExperienceTrackerComponent } from './character/experience-tracker/experience-tracker.component';
 import { ExperiencePipComponent } from './character/experience-tracker/experience-pip/experience-pip.component';
 import { StatComponent } from './character/stat/stat.component';
+import { ProgressTrackerComponent } from './character/progress-tracker/progress-tracker.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +36,8 @@ import { StatComponent } from './character/stat/stat.component';
     CharacterSheetComponent,
     ExperienceTrackerComponent,
     ExperiencePipComponent,
-    StatComponent
+    StatComponent,
+    ProgressTrackerComponent
   ],
   imports: [
     BrowserModule,
