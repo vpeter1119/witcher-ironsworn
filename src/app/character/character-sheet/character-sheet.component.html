@@ -2,8 +2,8 @@
     <div class="cs-header">
         <h2>Character Sheet</h2>
     </div>
-    <div class="cs-row">
-        <div class="cs-col">
+    <div fxLayout="row wrap" fxLayoutGap="5%">
+        <div fxLayout="column" fxFlex="45%">
             <div class="cs-label">Character</div>
             <mat-form-field appearance="fill">
                 <!-- <mat-label>Character Name</mat-label> -->
@@ -12,11 +12,22 @@
                 </div>
             </mat-form-field>
         </div>
-        <div class="cs-col">
+        <div fxLayout="column" fxFlex="45%">
             <div class="cs-label">Experience</div>
             <div class="cs-field">
                 <app-experience-tracker [data]="formData.experience"></app-experience-tracker>
             </div>
+        </div>
+    </div>
+    <div fxLayout="row">
+        <div fxLayout="column" fxFlex="100px">
+            <p>motivation</p>
+        </div>
+        <div fxLayout="column" fxFlex="auto">
+            <p>center</p>
+        </div>
+        <div fxLayout="column" fxFlex="100px">
+            <p>statuses</p>
         </div>
     </div>
 </div>

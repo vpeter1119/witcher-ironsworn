@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { FlexLayoutModule } from '@angular/flex-layout';
 
 /* Angular Material */
 
@@ -38,6 +39,7 @@ import { ExperiencePipComponent } from './character/experience-tracker/experienc
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
+    FlexLayoutModule,
     MatButtonModule,
     MatCardModule,
     MatFormFieldModule,

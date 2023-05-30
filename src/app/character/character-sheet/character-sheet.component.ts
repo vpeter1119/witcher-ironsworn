@@ -53,6 +53,7 @@ export class CharacterSheetComponent {
     this.formData = this.characterData || this.defaultCharacterData;
     if(this.formData.experience) this.formData.experience.value = 10;
     if(this.formData.experience) this.formData.experience.used = 5;
+    if(this.formData.experience) this.formData.experience.spend(3);
   }
 
 }
